@@ -14,7 +14,75 @@
 %
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Awesome CV LaTeX Template (filled with your actual resume)
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+\fontdir[fonts/]
+\newcommand*{\sectiondir}{resume/}
+
+\colorlet{awesome}{awesome-red}
+
+\begin{document}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Gaston Alejandro} \headerlastnamestyle{Trivi} \\
+	\vspace{2mm}
+	{\hspace{0.8cm}\faEnvelope\ \href{mailto:gatrivi.dev@gmail.com}{gatrivi.dev@gmail.com}}  |
+	{\faMobile\ (+54) 11 5619-9363}  |
+	{\faMapMarker\ Olivos, Buenos Aires} \\
+	\newline {\faLink\ \href{https://devtrivi.gatrivi.com}{devtrivi.gatrivi.com}} \\
+	{\faLink\ \href{https://www.linkedin.com/in/gatrivi}{https://www.linkedin.com/in/gatrivi}} \\
+	{\faLink\ \href{https://github.com/gatrivi}{https://github.com/gatrivi}}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+		Languages:  & {\skill{JavaScript, TypeScript, HTML, CSS}} \\
+		Frameworks:  & {\skill{React 19, Node.js, Express.js}} \\
+		Databases:  & {\skill{kvdb.io, idb-keyval, Google Drive}} \\
+		Technologies / Tools: \hspace{0.05cm} & {\skill{Vite 6, Tailwind CSS v4, Framer Motion, Deepgram, Google Translate, Gemini API, Vercel, Netlify, Git, CI/CD}} \\
+		Practices:  & {\skill{Production reliability, zero-downtime deployment workflows, structured JSON schema outputs, prompt/schema enforcement, performance troubleshooting}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+\vspace{-7mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+
+	\cventry
+	{Founding Developer \& End User}
+	{CatIntAssist (Self-built Production Tool)}
+	{Olivos, Buenos Aires}
+	{2024 -- Present}
+	{\begin{cvitems}
+		\vspace{0.5mm}
+		\item {Production Engineering: Built and shipped a real-time medical interpreter dashboard used daily in live clinical sessions; downtime equals lost income.}
+		\item {Zero-Downtime Deployments: Developed a ``safe deploy'' workflow using small atomic changes and instant rollback plans, achieving zero breaking releases in 12+ months.}
+		\item {Incident Response \& API Management: Handled full-stack incident response -- from transcription dropouts to translation fallback cascades -- without a dedicated ops team. Managed API costs and rate limits (Deepgram, Google Translate) under budget constraints.}
+		\item {UX Iteration: Debugged under pressure during active interpreting calls, building intuition for which bugs are cosmetic vs. session-fatal.}
+	\end{cvitems}}
+
+	\cventry
+	{Web \& React Developer}
+	{Zengasoft}
+	{Argentina}
+	{03/2023 -- Present}
+	{\begin%%%%
 %     Configuration
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Themes: Awesome-CV
